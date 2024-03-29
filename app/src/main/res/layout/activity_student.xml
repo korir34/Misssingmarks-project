@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Submit Data Section -->
+    <LinearLayout
+        android:id="@+id/submitDataSection"
+        android:layout_width="match_parent"
+        android:layout_height="423dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Fill in the information below"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Add form fields for student data submission -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="398dp"
+            android:layout_height="61dp"
+            android:hint="Enter your name" />
+
+        <EditText
+            android:id="@+id/RegNumber"
+            android:layout_width="395dp"
+            android:layout_height="55dp"
+            android:hint="Enter your registration number" />
+
+        <EditText
+            android:id="@+id/UnitName"
+            android:layout_width="398dp"
+            android:layout_height="58dp"
+            android:hint="Enter unit Name" />
+
+        <EditText
+            android:id="@+id/UnitCode"
+            android:layout_width="398dp"
+            android:layout_height="66dp"
+            android:hint=" Enter unit code" />
+
+        <EditText
+            android:id="@+id/txtDate"
+            android:layout_width="398dp"
+            android:layout_height="76dp"
+            android:ems="10"
+            android:hint=" Enter the date of examination"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+    <!-- Chat Section -->
+
+    <LinearLayout
+        android:id="@+id/chatSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitDataSection"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="244dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Type your message" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="118dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</RelativeLayout>

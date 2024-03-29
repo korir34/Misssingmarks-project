@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "208174836855",
+    "project_id": "missing-marks-app",
+    "storage_bucket": "missing-marks-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208174836855:android:6ada58d27feaabfab6ea72",
+        "android_client_info": {
+          "package_name": "com.example.missingmarksapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQW-u_Gcj-z4ytmnn9W3UKtS51DQG4LLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

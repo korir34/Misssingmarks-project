@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/RL_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blue"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:elevation="3dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/linear1"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Student Name : "
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/line_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/linear2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear1"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Reg No : "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/line_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/linear3"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear2"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Study Year : "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/line_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/linear4"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear3"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/label_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Marks : "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/line_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
